@@ -9,7 +9,6 @@ import {
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -17,10 +16,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
-        <img src={Logo} alt='Logo Image' style={{ width: '200px' }} />
-      </div>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#000000] text-gray-300'>
 
       {/* menu */}
       <ul className='hidden md:flex'>
@@ -37,11 +33,6 @@ const Navbar = () => {
         <li>
           <Link to='skills' smooth={true} duration={500}>
             Skills
-          </Link>
-        </li>
-        <li>
-          <Link to='work' smooth={true} duration={500}>
-            Work
           </Link>
         </li>
         <li>
